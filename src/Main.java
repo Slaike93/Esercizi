@@ -1,5 +1,3 @@
-import java.util.Map;
-import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
@@ -39,5 +37,6 @@ public class Main {
 
         studentMap.removeStudent("student3");
         System.out.println("Average GPA dopo rimozione: " + studentMap.getAverageGPA());
+
             }
         }
