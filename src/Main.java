@@ -12,6 +12,14 @@ public class Main {
 
         System.out.println("---------------------------------------");
 
+        Exercise3 ex3 = new Exercise3();
+        ex3.var1 = 5;
+        ex3.var2 = 10;
+        System.out.println(ex3.returnSum());
+        System.out.println(ex3.returnProduct());
+
+        System.out.println("---------------------------------------");
+
 
     }
 }
