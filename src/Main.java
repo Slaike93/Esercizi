@@ -1,3 +1,5 @@
+import java.util.Map;
+import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
@@ -20,6 +22,22 @@ public class Main {
 
         System.out.println("---------------------------------------");
 
+        StudentMap studentMap = new StudentMap();
 
-    }
-}
+        studentMap.addStudent("student1", new Student("Alice", 20, 3.5));
+        studentMap.addStudent("student2", new Student("Bob", 22, 3.8));
+        studentMap.addStudent("student3", new Student("Charlie", 21, 3.2));
+
+        Student student = studentMap.getStudent("student2");
+        if (student != null) {
+            System.out.println("Nome studente: " + student.getName() + ", Età: " + student.getAge() + ", GPA: " + student.getGPA());
+        } else {
+            System.out.println("Studente non trovato.");
+        }
+
+        System.out.println("Average GPA: " + studentMap.getAverageGPA());
+
+        studentMap.removeStudent("student3");
+        System.out.println("Average GPA dopo rimozione: " + studentMap.getAverageGPA());
+            }
+        }
